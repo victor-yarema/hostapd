@@ -46,5 +46,8 @@ const struct wpa_driver_ops *const wpa_drivers[] =
 #ifdef CONFIG_DRIVER_NONE
 	&wpa_driver_none_ops,
 #endif /* CONFIG_DRIVER_NONE */
+#ifdef CONFIG_DRIVER_RTW
+	&wpa_driver_rtw_ops,
+#endif /* CONFIG_DRIVER_RTW */
 	NULL
 };
